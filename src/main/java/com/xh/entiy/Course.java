@@ -24,7 +24,7 @@ public class Course implements Serializable{
 	private Integer id;
 	private String name;
 	private String descript;
-	private Date upload_time;
+	private Date create_time;
 	
 	@ManyToMany(mappedBy="courses",cascade=CascadeType.ALL)
 	private List<User> users;
@@ -46,11 +46,12 @@ public class Course implements Serializable{
 	public void setDescript(String descript) {
 		this.descript = descript;
 	}
-	public Date getUpload_time() {
-		return upload_time;
+	
+	public Date getCreate_time() {
+		return create_time;
 	}
-	public void setUpload_time(Date upload_time) {
-		this.upload_time = upload_time;
+	public void setCreate_time(Date create_time) {
+		this.create_time = create_time;
 	}
 	public List<User> getUsers() {
 		return users;

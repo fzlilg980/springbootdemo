@@ -3,8 +3,39 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.css"/>
+<script src="../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+<style type="text/css">
+	.menu{
+		border: 1px solid #777;
+	}
+	.sub-menu{
+		border: none;
+	}
+</style>
 </head>
 <body>
-kkk
+<div class="container">
+	<nav class="navbar navbar-inverse">
+		<div class="navbar-header">
+			<a href="#" class="navbar-brand">课程管理系统</a>
+		</div>
+		<p class="navbar-text navbar-right" style="margin-right: 20px;">角色</p>
+	</nav>
+	<div class="row">
+		<div class="col-md-2">
+			<ul class="list-group menu">
+				<li class="list-group-item" data-toggle="collapse" data-target="#kcgl">课程管理</li>
+				<ul id="kcgl" class="collapse list-group">
+					<li class="list-group-item sub-menu">创建课程</li>
+					<li class="list-group-item sub-menu">创建课程</li>
+					<li class="list-group-item sub-menu">创建课程</li>
+				</ul>
+				<li class="list-group-item">学生管理</li>
+			</ul>
+		</div>
+	</div>
+</div>
 </body>
 </html>
